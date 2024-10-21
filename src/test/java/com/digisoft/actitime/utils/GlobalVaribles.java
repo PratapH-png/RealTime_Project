@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
  * all the required global variables
  */
 
-public class GlobalVetiables {
+public class GlobalVaribles {
 
 	public static final String REPORTS = "/reports";
 	public static final String USERNAME = "/admin";

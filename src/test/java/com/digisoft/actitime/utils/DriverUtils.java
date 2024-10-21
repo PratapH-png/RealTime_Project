@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class DriverUtils extends GlobalVetiables {
+public class DriverUtils extends GlobalVaribles {
 
 	/***
 	 * @author Admin
