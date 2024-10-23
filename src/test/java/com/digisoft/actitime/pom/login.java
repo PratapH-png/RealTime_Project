@@ -1,14 +1,15 @@
-package com.digisoft.actitime.utils;
+package com.digisoft.actitime.pom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import com.digisoft.actitime.utils.DriverUtils;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class ActitimeUtils extends DriverUtils {
-
+public class login extends DriverUtils{
 	@Given("I am on the actiTime login page")
 	public void i_am_on_the_acti_time_login_page() {
 		driver.get("http://localhost/login.do");
@@ -52,10 +53,6 @@ public class ActitimeUtils extends DriverUtils {
 	@Then("I should see an error message saying Invalid username or password.")
 	public void i_should_see_an_error_message_saying_invalid_username_or_password() {
 		 WebElement errorMessage;
-	}
-	
-	public void launch() {
-		getDriver("ff");
 	}
 
 }

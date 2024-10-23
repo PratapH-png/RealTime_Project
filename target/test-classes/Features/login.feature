@@ -31,5 +31,5 @@ Feature: actiTime Webpage Functionalities
   Scenario: Unsuccessful login with invalid credentials
     Given I am on the actiTime login page
     When I enter an invalid username and password
-    And I click on the Login button
+    And I Click Login button
     Then I should see an error message saying Invalid username or password.
