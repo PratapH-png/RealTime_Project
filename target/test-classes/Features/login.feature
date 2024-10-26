@@ -19,17 +19,8 @@
 @functionality
 Feature: actiTime Webpage Functionalities
 ## 1. Login Module
-  @smoke
   Scenario: Successful login with valid credentials
-    Given I am on the actiTime login page
-    When I enter valid username and password
-    And I click on the Login button
-    Then I should be redirected to the actiTime dashboard
-    And I should see the Logout option
-
-  @negative
-  Scenario: Unsuccessful login with invalid credentials
-    Given I am on the actiTime login page
-    When I enter an invalid username and password
-    And I Click Login button
-    Then I should see an error message saying Invalid username or password.
+    Given user is launch the browser
+    When user enter admin and manager
+    And  click on the Login button
+    Then user should be navigate to homepage

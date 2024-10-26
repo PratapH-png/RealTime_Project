@@ -15,5 +15,9 @@ public class GlobalVaribles {
 	public static final String PASSWORD = "/manager";
 	public static final String LOGIN = "/login";
 
-	public WebDriver driver = null;
+	public static WebDriver driver ;
+	
+	public void initDriver() {
+		driver=new DriverUtils().getDriver("chrome");
+	}
 }

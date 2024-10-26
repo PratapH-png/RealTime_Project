@@ -8,19 +8,26 @@ public class LoginPage extends DriverUtils{
 	public String Password_byname = "pwd";
 	public String Login_byid = "loginButton";
 	
-	public void enterusername (String name) {
-		System.out.println("entering the username" + name);
-		type("name", username_byname, name );
+	public void enterusername (String username) {
+		System.out.println("entering the username" + username);
+		type("name", username_byname, username );
 	}
 	
-	public void enterpassword (String name) {
-		System.out.println("entering the password" + name);
-		type("name", Password_byname, name);
+	public void enterpassword (String password) {
+		System.out.println("entering the password" + password);
+		type("name", Password_byname, password);
 	}
 	
-	public void clicklogin (String login) {
+	public void clicklogin () {
 		System.out.println("click on login");
-		click("id", login);
+		click("id", Login_byid);
+	}
+	//method to perform login action
+	public void login(String username, String passowrd, String password) {
+		System.out.println("Login using " + username + " and " + password);
+		enterusername(username);
+		enterpassword(passowrd);
+		clicklogin();
 	}
 	
 }
